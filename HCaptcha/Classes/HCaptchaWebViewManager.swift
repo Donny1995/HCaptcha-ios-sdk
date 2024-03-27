@@ -291,7 +291,7 @@ fileprivate extension HCaptchaWebViewManager {
      Adds the webview to a valid UIView and loads the initial HTML file
      */
     func setupWebview(html: String, url: URL) {
-        if let window = UIApplication.shared.keyWindow {
+        if let window = HCaptcha.applicationReference?.keyWindow {
             setupWebview(on: window, html: html, url: url)
         } else {
             observer = NotificationCenter.default.addObserver(

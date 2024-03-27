@@ -30,14 +30,22 @@ internal protocol HCaptchaURLOpener {
  */
 internal class HCapchaAppURLOpener: HCaptchaURLOpener {
     func canOpenURL(_ url: URL) -> Bool {
-        return UIApplication.shared.canOpenURL(url)
+        guard let application = HCaptcha.applicationReference else {
+            return false
+        }
+        
+        return application.canOpenURL(url)
     }
 
     func openURL(_ url: URL) {
+        guard let application = HCaptcha.applicationReference else {
+            return
+        }
+        
         if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            application.open(url, options: [:], completionHandler: nil)
         } else {
-            UIApplication.shared.openURL(url)
+            application.openURL(url)
         }
     }
 }

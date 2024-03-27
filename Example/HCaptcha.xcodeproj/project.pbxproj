@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -74,7 +74,7 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		62C1DD0E80E9920845E5DA51 /* HCaptcha.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HCaptcha.podspec; path = ../HCaptcha.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		62C1DD0E80E9920845E5DA51 /* HCaptcha.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HCaptcha.podspec; path = ../HCaptcha.podspec; sourceTree = "<group>"; };
 		7CAE52D12DDE8FC56C961E7D /* Pods-HCaptcha_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCaptcha_Example.release.xcconfig"; path = "Target Support Files/Pods-HCaptcha_Example/Pods-HCaptcha_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8352086EA5EE39AFD3CDA308 /* Pods_HCaptcha_Objc_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCaptcha_Objc_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8453AB7DC2F84E620BCFA704 /* Pods-HCaptcha_Objc_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCaptcha_Objc_Example.release.xcconfig"; path = "Target Support Files/Pods-HCaptcha_Objc_Example/Pods-HCaptcha_Objc_Example.release.xcconfig"; sourceTree = "<group>"; };

@@ -15,6 +15,8 @@ import JavaScriptCore
 */
 @objc
 public class HCaptcha: NSObject {
+    static public weak var applicationReference: UIApplication?
+    
     fileprivate struct Constants {
         struct InfoDictKeys {
             static let APIKey = "HCaptchaKey"
