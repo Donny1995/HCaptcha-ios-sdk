@@ -11,6 +11,7 @@ import Foundation
  */
 @objc
 public enum HCaptchaEvent: Int, RawRepresentable {
+    case present
     case open
     case expired
     case challengeExpired
@@ -21,6 +22,8 @@ public enum HCaptchaEvent: Int, RawRepresentable {
 
     public var rawValue: RawValue {
         switch self {
+        case .present:
+            return "present"
         case .open:
             return "open"
         case .expired:
@@ -36,6 +39,8 @@ public enum HCaptchaEvent: Int, RawRepresentable {
 
     public init?(rawValue: RawValue) {
         switch rawValue {
+        case "present":
+            self = .present
         case "open":
             self = .open
         case "expired":

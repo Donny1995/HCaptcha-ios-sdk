@@ -99,7 +99,7 @@ internal class HCaptchaWebViewManager: NSObject {
         )
         webview.accessibilityIdentifier = "webview"
         webview.accessibilityTraits = UIAccessibilityTraits.link
-        webview.isHidden = true
+        webview.isHidden = false
         if debug {
             if #available(iOS 16.4, *) {
                 webview.perform(Selector(("setInspectable:")), with: true)
@@ -234,7 +234,8 @@ fileprivate extension HCaptchaWebViewManager {
         case .error(let error):
             handle(error: error)
             onEvent?(.error, error)
-        case .showHCaptcha: webView.isHidden = false
+        case .showHCaptcha:
+            onEvent?(.present, nil)
         case .didLoad: didLoad()
         case .onOpen: onEvent?(.open, nil)
         case .onExpired: onEvent?(.expired, nil)
